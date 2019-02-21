@@ -10,26 +10,37 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	var cant;
- 	var cont;
- 	var precio =35;
- 	var descuento = 0;
 
- 	cant = document.getElementById("Cantidad").value;
+	      // 6   5        4 	  	3   	     2 
+// argluz   105 105      105 		89,25 		70    
+// flpelamp 105 134,75   105		94,5		70
+//osram		105 14,75    112        44,75       70
 
- 	cant = parseInt(cant);
+	var precio = 35;
+	var cantidad;
 
- 	
 
- 	
 
- 	if (lámparas>=6) {
- 		descuento
+    cantidad = document.getElementById("Cantidad").value;
+    
 
 
 
 
- 	}
+
+
+
+}
+
+
+	
+
+
+
+
+
+
+
 
 
 
