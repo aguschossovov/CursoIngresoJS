@@ -3,6 +3,21 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
+	var cantidad;
+
+	cantidad = prompt("Ingrese 5 numeros");
+	cantidad = parseInt(cantidad);
+
+	while(cantidad>6);
+
+	contador++
+
+	
+
+
+
+
+
 
 
 
