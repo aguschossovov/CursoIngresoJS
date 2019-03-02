@@ -3,14 +3,21 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-	var cantidad;
+	var numero;
 
-	cantidad = prompt("Ingrese 5 numeros");
-	cantidad = parseInt(cantidad);
+	while(contador<5) {
 
-	while(cantidad>6);
+		contador++
+		numero = prompt("Ingrese 5 numeros");
+		numero = parseInt(numero);
+		acumulador = acumulador + numero;
+	}
 
-	contador++
+document.getElementById('suma').value=acumulador;
+document.getElementById('promedio').value=acumulador/5;
+	
+
+
 
 	
 
@@ -21,7 +28,6 @@ function mostrar()
 
 
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/5;
+
 
 }//FIN DE LA FUNCIÓN
