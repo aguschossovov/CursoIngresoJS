@@ -1,20 +1,12 @@
 function mostrar()
 {
 var clave;
-var contador;
 
-clave = prompt("ingrese el número clave.");
+	do{ 
 
-	while (clave != "utn750") { 
+		clave = prompt("ingrese el número clave.");
 
-		alert("Error de validacion.");
-
-	clave = prompt("ingrese el número clave.");
-	contador++; 
-
-	
-
-}
+	}while (clave != "utn750");
 
 
 }//FIN DE LA FUNCIÓN
