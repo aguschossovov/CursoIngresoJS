@@ -5,6 +5,7 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
+	
 	var precio1;
 	var precio2;
 	var precio3;
@@ -18,9 +19,10 @@ function Sumar ()
 	precio2 = parseInt(precio2);
 	precio3 = parseInt(precio3);
 
-	suma = (precio1 + precio2 + precio3);
+	suma = precio1 + precio2 + precio3; 
 
-	alert("La suma de los precios es: " + suma); 
+	alert("La suma de los precios es: " + suma);
+
 }
 function Promedio () 
 {
@@ -29,7 +31,6 @@ function Promedio ()
 	var precio3;
 	var suma;
 	var promedio;
-	var valorSuma;
 
 	precio1 = document.getElementById("PrecioUno").value;
 	precio2 = document.getElementById("PrecioDos").value;
@@ -39,10 +40,9 @@ function Promedio ()
 	precio2 = parseInt(precio2);
 	precio3 = parseInt(precio3);
 
-	suma = (precio1 + precio2 + precio3);
+	suma = precio1 + precio2 + precio3; 
 
-	valorSuma = suma;
-	promedio = valorSuma / 3;
+	promedio = suma/3;
 
 	alert("El promedio de los precios es: " + promedio);
 
@@ -54,9 +54,8 @@ function PrecioFinal ()
 	var precio3;
 	var suma;
 	var promedio;
-	var valorSuma;
-	var precioFinal;
 	var iva;
+	var precioFinal;
 
 	precio1 = document.getElementById("PrecioUno").value;
 	precio2 = document.getElementById("PrecioDos").value;
@@ -65,15 +64,30 @@ function PrecioFinal ()
 	precio1 = parseInt(precio1);
 	precio2 = parseInt(precio2);
 	precio3 = parseInt(precio3);
-	iva = parseInt(iva);
 
-	suma = (precio1 + precio2 + precio3);
+	suma = precio1 + precio2 + precio3; 
 
-	iva = suma*0.21;
+	precioFinal = suma;
+	precioFinal = precioFinal * 1.21; 
 
-	precioFinal = suma + iva;
+	alert("El precio final mas el 21% es: " + precioFinal);
 
-	alert("El precio final es: " + precioFinal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
